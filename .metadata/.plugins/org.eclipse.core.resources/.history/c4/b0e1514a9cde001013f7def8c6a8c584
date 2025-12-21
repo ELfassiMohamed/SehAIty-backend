@@ -12,13 +12,12 @@ spring:
     config:
       enabled: false
       fail-fast: false
-    gateway:
+    gateway
       discovery:
         locator:
           enabled: true
           lower-case-service-id: true
       globalcors:
-        add-to-simple-url-handler-mapping: true
         corsConfigurations:
           '[/**]':
             allowedOrigins:

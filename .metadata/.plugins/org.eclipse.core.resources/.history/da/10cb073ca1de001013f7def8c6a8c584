@@ -21,7 +21,7 @@ public class SecurityConfig {
 
     @Bean
     public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
-    	
+    /*	
         http
             .csrf(csrf -> csrf.disable())
             .authorizeExchange(exchanges -> exchanges
@@ -30,7 +30,7 @@ public class SecurityConfig {
         
         return http.build();
         
-      
+      */
     	/*
     	return http
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
@@ -40,7 +40,6 @@ public class SecurityConfig {
                 )
                 .build();
     	*/
-        /*
     	return http
                 .csrf(ServerHttpSecurity.CsrfSpec::disable)
                 .cors(Customizer.withDefaults()) // 🔥 This connects the Security Filter to your YAML CORS settings
@@ -49,7 +48,6 @@ public class SecurityConfig {
                     .anyExchange().permitAll()
                 )
                 .build();
-                */
     }
 }
 

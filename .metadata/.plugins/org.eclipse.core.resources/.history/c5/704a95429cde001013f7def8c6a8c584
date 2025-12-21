@@ -13,6 +13,11 @@ spring:
       enabled: false
       fail-fast: false
     gateway:
+      default-filters:
+        - name: DeduplicateResponseHeader
+          args:
+            strategy: RETAIN_FIRST
+            headers: Access-Control-Allow-Origin Access-Control-Allow-Credentials
       discovery:
         locator:
           enabled: true

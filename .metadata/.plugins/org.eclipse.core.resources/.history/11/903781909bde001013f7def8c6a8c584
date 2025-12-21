@@ -13,6 +13,8 @@ spring:
       enabled: false
       fail-fast: false
     gateway:
+      default-filters:
+        - DeduplicateResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
       discovery:
         locator:
           enabled: true

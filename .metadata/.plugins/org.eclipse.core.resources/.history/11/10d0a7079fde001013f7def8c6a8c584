@@ -18,7 +18,6 @@ spring:
           enabled: true
           lower-case-service-id: true
       globalcors:
-        add-to-simple-url-handler-mapping: true
         corsConfigurations:
           '[/**]':
             allowedOrigins:
