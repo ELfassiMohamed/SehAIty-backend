@@ -57,11 +57,6 @@ public class CertificateController {
     public List<Certificate> getAllCertificates() {
     	return certificateRepository.findAll();
     }
-    
-    @GetMapping("/{id}/patient")
-    public List<Certificate> getPatientCertificates(@PathVariable String id) {
-    	return certificateService.getCertificatesByPatientId(id);
-    }
 
     /**
      * Génère un PDF pour un certificat médical.

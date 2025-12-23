@@ -30,7 +30,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -53,14 +52,8 @@ public class CertificateController {
     @Autowired
     CertificateRepository certificateRepository;
     
-    @GetMapping("/all")
     public List<Certificate> getAllCertificates() {
-    	return certificateRepository.findAll();
-    }
-    
-    @GetMapping("/{id}/patient")
-    public List<Certificate> getPatientCertificates(@PathVariable String id) {
-    	return certificateService.getCertificatesByPatientId(id);
+    	return certificateRepository.findAll(null);
     }
 
     /**

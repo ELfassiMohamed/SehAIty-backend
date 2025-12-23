@@ -25,6 +25,9 @@ public class CertificateService {
 
     private final CertificateRepository certificateRepository;
     
+    public Certificate getAllCertifications() {
+    	return certificateRepository.findAll();
+    }
 
     /**
      * Récupère un certificat par son ID.
