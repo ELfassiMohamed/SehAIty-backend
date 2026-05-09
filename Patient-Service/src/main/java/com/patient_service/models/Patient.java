@@ -60,26 +60,33 @@ public class Patient implements UserDetails {
 
     // ---------- UserDetails methods ----------
     @Override
+    @JsonIgnore
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return Collections.singletonList(new SimpleGrantedAuthority(role.getAuthority()));
     }
 
     @Override
+    @JsonIgnore
     public String getUsername() { return email; }
 
     @Override
+    @JsonIgnore
     public String getPassword() { return password; }
 
     @Override
+    @JsonIgnore
     public boolean isAccountNonExpired() { return accountNonExpired; }
 
     @Override
+    @JsonIgnore
     public boolean isAccountNonLocked() { return accountNonLocked; }
 
     @Override
+    @JsonIgnore
     public boolean isCredentialsNonExpired() { return credentialsNonExpired; }
 
     @Override
+    @JsonIgnore
     public boolean isEnabled() { return enabled; }
 
     // ---------- Getters / Setters ----------
