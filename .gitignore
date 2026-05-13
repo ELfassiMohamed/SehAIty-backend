@@ -49,6 +49,7 @@
 /.classpath
 /.project
 /.settings/
+/.metadata/
 
 # VS Code
 /.vscode/
