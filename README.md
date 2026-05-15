@@ -8,6 +8,8 @@ SehAIty Backend is a Spring Boot microservices platform for coordinating healthc
 
 ### Architecture
 
+![SehAIty Architecture](https://sehaity-main-architecture.mohamed-el-fassi.workers.dev/)
+
 The project is split into independent services:
 
 | Service | Port | Role |
@@ -118,6 +120,8 @@ Before using this project outside local development, move secrets such as JWT ke
 SehAIty Backend est une plateforme de microservices Spring Boot pour faciliter la coordination entre patients et prestataires de sante. Elle couvre l'authentification, la gestion des patients et prestataires, les dossiers medicaux, les demandes patient, les notifications et la generation de certificats medicaux.
 
 ### Architecture
+
+![Architecture SehAIty](https://sehaity-main-architecture.mohamed-el-fassi.workers.dev/)
 
 Le projet est compose de plusieurs services independants:
 
